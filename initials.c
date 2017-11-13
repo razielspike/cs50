@@ -4,11 +4,11 @@
 #include <ctype.h>
 
 int main(void) {
-    // get the name
+    // Get the name
     printf("Please input your First and Last Name:\n");
     string name = get_string();
 
-    //Print the first letter of the first word uppercase
+    // Print the first letter of the first word uppercase
     printf("The initials are %c ", toupper(name[0]));
 
     // For the character after \0 - the end of the first word
@@ -18,5 +18,6 @@ int main(void) {
             printf("and %c.\n", toupper(name[i+1]));
         }
     }
+    // Proceed to be a good citizen
     return 0;
 }
